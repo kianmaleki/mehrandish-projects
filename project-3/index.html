@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="javascript:void(0);">
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <input type="button" value="Get Answer" id="btn">
+        <p>answer is : <span id="answer"></span></p>
+
+    </form>
+
+    <script>
+        const findAnswer = () => {
+            let number1 = parseFloat(document.getElementById("number1").value) || 0;
+            let number2 = parseFloat(document.getElementById("number2").value) || 0;
+            document.getElementById("answer").innerHTML = number1 + number2;
+        }
+
+        document.getElementById("btn").addEventListener("click", findAnswer);
+
+    </script>
+</body>
+
+</html>
