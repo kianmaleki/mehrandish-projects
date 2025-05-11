@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افزودن مشتری جدید</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>افزودن مشتری جدید</h1>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <form action="../php/add-customer.php" method="post" id="addCustomerForm">
+                    <div class="form-group">
+                        <label for="customerName">نام و نام خانوادگی:</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerPhone">شماره تماس:</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerEmail">ایمیل:</label>
+                        <input type="email" id="customerEmail" name="customerEmail">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerAddress">آدرس:</label>
+                        <textarea id="customerAddress" name="customerAddress" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerType">نوع مشتری:</label>
+                        <select id="customerType" name="customerType" required>
+                            <option value="">انتخاب کنید</option>
+                            <option value="regular">عادی</option>
+                            <option value="vip">ویژه</option>
+                            <option value="wholesale">عمده</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerNotes">یادداشت‌ها:</label>
+                        <textarea id="customerNotes" name="customerNotes" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">ذخیره مشتری</button>
+                </form>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1rem;">
+                <a href="../index.html" class="btn">بازگشت به صفحه اصلی</a>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© ۱۴۰۳ سیستم مدیریت محصولات و مشتریان</p>
+        </footer>
+    </div>
+</body>
+</html> 
